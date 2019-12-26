@@ -4,16 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>YAHTZEE Scoreboard</title>
 </head>
 <body>
-    <input id="onesbox" class="onesbox" />
-    <input id="twosbox" class="twosbox" />
-    <input id="threesbox" class="threesbox" />
-    <input id="foursbox" class="foursbox" />
-    <input id="fivesbox" class="fivesbox" />
-    <input id="sixesbox" class="sixesbox" />
-    <h5 id="totaltop" class="totaltop"></h5>
+    <div id="topfields">
+        <input id="onesfield" class="topfield" />
+        <input id="twosfield" class="topfield" />
+        <input id="threesfield" class="topfield" />
+        <input id="foursfield" class="topfield" />
+        <input id="fivesfield" class="topfield" />
+        <input id="sixesfield" class="topfield" />
+        <p id="totaltop" class="topfield"></p>    
+    </div>
+    <div id="bottomfields">
+        <input id="3ofakind" class="bottomfield" />
+        <input id="4ofakind" class="bottomfield" />
+        <input id="fullhouse" class="bottomcheck" type="checkbox" />
+        <input id="smallstraight" class="bottomcheck" type="checkbox" />
+        <input id="largestraight" class="bottomcheck" type="checkbox" />
+        <input id="yahtzee1" class="bottomcheck" type="checkbox" />
+        <div id="yahtzees">
+                <input id="yahtzee2" class="yahtzees" type="checkbox" />
+                <input id="yahtzee3" class="yahtzees" type="checkbox" />
+                <input id="yahtzee4" class="yahtzees" type="checkbox" />
+                <input id="yahtzee5" class="yahtzees" type="checkbox" />
+                <input id="yahtzee1" class="yahtzees" type="checkbox" />
+        </div>
+        <input id="chance" class="bottomfield" />
+        <p id="bottomtotal" class="bottomfield" ></p>
+        <p id="total" class="bottomfield"></p>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
